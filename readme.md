@@ -75,6 +75,13 @@ The script will perform the following steps:
 - **Hashcat:** Run Hashcat with the selected wordlist and device.
 - **Cleanup:** Remove the files after the cracking process if asked.
 
+## Problems
+In case the hashcat is not running because of potfile record, you can find the location of potfile with:
+```
+sudo find / | grep "hashcat.potfile"
+```
+and remove the potfile.
+
 ## Customization
 - **Wordlist Directory:** The wordlists should be placed in the `wordlists/` directory. The script will automatically prompt you to choose a wordlist by number.
 
